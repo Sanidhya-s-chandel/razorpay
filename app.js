@@ -8,7 +8,7 @@ const Payment = require("./models/payment.model");
 require("./config/db.config.js");
 app.set('view engine','ejs');
 app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
+app.use(express.urlencoded({ extended: true }));    
 
 
 const razorpay = new Razorpay({
